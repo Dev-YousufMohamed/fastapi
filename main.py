@@ -3,10 +3,9 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-url = "https://www.youtube.com/watch?v=9Ipl9BP6rH4"
-
 @app.get("/")
 def read_root():
+    url = "https://www.youtube.com/watch?v=9Ipl9BP6rH4"
     return {"Hello": url}
 
 @app.get("/items/{item_id}")
