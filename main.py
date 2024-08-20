@@ -5,6 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
+    from pytubefix import YouTube
     url = "https://www.youtube.com/watch?v=9Ipl9BP6rH4"
     return {"Hello": url}
 
